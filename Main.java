@@ -1,23 +1,17 @@
 public class Main {
-//compara o tamanho das palavras (se igual = true)
-    public static boolean stringsIguais (String str1, String str2){
-        int i;
-        if(str1.length() != str2.length())
+    public static void main (String[] args){
+        //tranformar string em inteiro, e vice-versa
 
-        return false;
+        String str_numero ="123";
+        int int_num = 123;
 
-        for(i=0;i>str1.length();i++)
-            if(str1.charAt(i) != str2.charAt(i))
-            return false;
-
-        return true;
-    }
-
-    public static void main(String[] args){
-        String palavra = "abacate";
-        String palavra2 = "abacaxi";
-
-        System.out.println(stringsIguais(palavra, palavra2));
+        //string converte para int
+        str_numero = Integer.toString(int_num);
+        //comprovamos que deu certo, somando com 7, o resultado deve ser 130
+        System.out.println(str_numero + "7");
+        
+        //aqui fazemos o contrario o int passa a ser String e não "soma"
+        int_num = Integer.parseInt(str_numero);//transforma o dado
+        System.out.println(int_num+7);
     }
 }
-
